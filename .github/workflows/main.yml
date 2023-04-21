@@ -17,7 +17,7 @@ jobs:
         run: npm install
 
       - name: Build Docker image
-        run: docker build -t deploy-app .
+        run: docker build -t dinuka .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
@@ -27,8 +27,8 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker tag deploy-app ${{ secrets.DOCKER_USERNAME }}/deploy-app:${{ github.sha }}
-          docker push ${{ secrets.DOCKER_USERNAME }}/deploy-app:${{ github.sha }}
+          docker tag dinuka ${{ secrets.DOCKER_USERNAME }}/dinuka:${{ github.sha }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/dinuka:${{ github.sha }}
 
       - name: Start minikube
         uses: medyagh/setup-minikube@master
