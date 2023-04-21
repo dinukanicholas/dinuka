@@ -2,14 +2,14 @@
 
 body {
   font-family: 'Outfit', serif;
-  background-color: hsl(60, 100%, 97%);
+  background-color: hsl(143, 17%, 82%);
   color: #29292d;
 }
 
 .input {
-  background: rgba(255, 255, 255, 0);
+  background: hsl(143, 17%, 82%);
   border: black solid 1px;
-  color: #2d292d;
+  color: #000000;
   font-family: 'Outfit', serif;
 }
 
