@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-nodeapp
+  labels:
+    app: dinuka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dinuka
+  template:
+    metadata:
+      labels:
+        app: dinuka 
+    spec:
+      containers:
+      - name: nodeserver
+        image: dinuka254/dinuka:latest
+        ports:
+        - containerPort: 3000
