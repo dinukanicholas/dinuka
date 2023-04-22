@@ -1,1 +1,1 @@
-## Microservices created using OpenAI APIs
+## Microservices created using OpenAI APIs Created by Dinuka. Please refer teh run book for the detail steps of deploying them in kubernetes
